@@ -148,7 +148,8 @@ input[type=url] {
 */
 
 		#content {
-			background: rgba(0,0,0,.2);
+			background: #fff;
+			border-right: 1px dotted #e6e6e6;
 			float: left;
 			margin: 0;
 			padding: 2%;
@@ -240,6 +241,39 @@ input[type=url] {
 			border: 1px solid #e6e6e6;
 			float: right;
 			margin: 0 0 2% 2%;
+		}
+		
+		#content ul.post-meta {
+			
+			list-style: none;
+			margin: 0 0 2%;
+			padding: 0;
+			text-indent: 0;
+		}
+		#content ul.post-meta li {
+			display: block;
+			overflow: auto;
+		}
+		#content ul.post-meta li h6 {
+			color: #999;
+			float: left;
+			font-size: 70%;
+			text-transform: uppercase;
+			width: 25%;
+		}
+		#content ul.post-meta li p {
+			font-size: 80%;
+			margin: 0;
+		}
+		#content ul.post-meta li ul {
+			font-size: 80%;
+			margin: 0;
+			padding: 0;
+			text-indent: 0;
+		}
+		#content ul.post-meta li ul li {
+			display:inline;
+			margin: 0 5px 0 0;
 		}
 		
 
