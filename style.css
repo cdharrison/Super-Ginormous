@@ -1,0 +1,175 @@
+/*
+Theme Name: Super Ginormous
+Theme URI: https://github.com/cdharrison/Super-Ginormous
+Description: An achingly simple child theme built for Tersus
+Author: Chris Harrison, Grant Hutchinson, Dan Rubin, Andy van der Raadt
+Version: 0.0.1 (Development)
+License: GNU General Public License
+Template: tersus
+License URI: https://raw.github.com/splorp/tersus/master/license.txt
+Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
+*/
+
+@import url("../tersus/style.css");
+@import url("../tersus//style/css/layout-advanced.css"); /* This will be better integrated in child themes soon. */
+
+body {
+	background: #fff;
+	border-top: 10px solid #00aeef;
+	font-family: 'Helvetica-Light',helvetica,arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body a, body a:visited {
+	color: #00aeef;
+}
+
+
+/* -- Header -- */
+	header {
+		background: #004a80;
+		line-height: 1.3;
+		margin: 0 0 2%;
+		padding: 2%;
+		text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+	}
+	header h1 {
+		font-size: 600%;
+		font-weight: normal;
+		letter-spacing: -5px;
+		margin: 0;
+	}
+	header p {
+		color: #fff;
+		font: normal 1.2em georgia,times,serif;
+		font-style: italic;
+	}
+
+	#announcement {
+		background: rgba(255,255,255,.1) url(info.png) -25px 50% no-repeat;
+		border: 1px solid rgba(255,255,255,.5);
+		border-radius: 5px;
+		color: rgba(255,255,255,1);
+		line-height: 1;
+		margin: 0 0 2%;
+		padding: 1% 1% 1% 7%;
+		text-shadow: rgba(0,0,0,.5) 0 1px 0;
+		width: 92%;
+	}
+	#announcement:hover {
+		border: 1px solid rgba(255,255,255,1);
+	}
+	#announcement h3 {
+		font-size: 1em;
+		margin: 0 0 .25em;
+		padding: 0;
+	}
+	#announcement p {
+		font: normal .8em georgia,times,serif;
+		font-style: italic;
+		margin: 0;
+		padding: 0;
+	}
+	
+
+/* -- Content -- */
+section#content {
+	padding: 0 2% 4%;
+}
+
+section#content img.alignleft {
+	border: 1px solid #e6e6e6;
+	float: left;
+	margin: 0 2% 2% 0;
+}
+section#content img.alignright {
+	border: 1px solid #e6e6e6;
+	float: right;
+	margin: 0 0 2% 2%;
+}
+
+
+article p[title] {
+	background: #00aeef;
+	box-shadow: rgba(0,0,0,0) 2px 2px 0;
+	color: #fff;
+	display: inline-block;
+	font-size: .7em;
+	font-weight: bold;
+	padding: 1% 1.5%;
+	text-transform: uppercase;
+}
+aside ul li#flickrrss {
+	overflow: auto;
+}
+aside ul li#flickrrss img {
+	border: solid #e6e6e6;
+	border-width: 2%;
+	float: left;
+	margin: 0 0 2% 0;
+	width: 42%;
+}
+aside ul li#flickrrss img:nth-child(odd) {
+	margin: 0 2% 2% 2%;
+}
+
+
+/*
+	iPad - Horizontal
+*/
+@media screen and ( max-device-width: 1024px ) {
+	
+	body header, 
+	body #content,
+	body aside,
+	body footer {
+		width: 100%;
+	}
+	
+	body header h1 {
+		font-size: 340%;
+		font-weight: normal;
+		letter-spacing: -2px;
+		line-height: 1;
+	}
+	body aside {
+		background: #960;
+		color: #fff;
+		display:inline-block;
+		float: none;
+		padding: 3%;
+		width: 44%;
+	}
+	
+}
+
+/*
+	Small Screen Styles
+*/
+
+@media handheld and ( max-width: 480px ), screen and ( max-device-width: 480px ), screen and ( max-width: 768px ) {
+	
+	body aside {
+		vertical-align: top;
+		width: 100%;
+	}
+	
+	body header h1 {
+		font-size: 210%;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0 0 .25em;
+	}
+	body header p {
+		font-size: 90%;
+	}
+	body article h2,
+	body #content h2 {
+		font-size: 160%;
+	}
+	body #content h2 + p {
+		font-size: 90%;
+	}
+}
+}
