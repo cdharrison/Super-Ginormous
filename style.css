@@ -104,7 +104,7 @@ input[type=url] {
 			background: #004a80;
 			line-height: 1;
 			margin: 0;
-			padding: 2%;
+			padding: 3%;
 			text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
 		}
 		header h1 {
@@ -152,8 +152,8 @@ input[type=url] {
 			border-right: 1px dotted #e6e6e6;
 			float: left;
 			margin: 0;
-			padding: 2%;
-			width: 56%;
+			padding: 3%;
+			width: 52.333333333%;
 			}
 
 		#content > h1 {
@@ -281,10 +281,18 @@ input[type=url] {
 	Post Format Styles
 */
 
-.post-aside p + p {
-	display: none;
-	}
-
+.post-aside {
+	overflow: auto;
+}
+.post-aside p {
+	float: right;
+	width: 75%;
+}
+.post-aside p.published {
+	float: left;
+	width: auto;
+}
+	
 .post-quote h2,
 .post-quote h2 + p {
 	display: none;
@@ -313,14 +321,15 @@ input[type=url] {
 .post-quote blockquote + p + p + ul {
 	display: none;
 	}
+.post-quote ul.post-meta { display: none; }
 
 
 	/* -- Sidebars -- */
 		aside {
 			float: right;
 			margin: 0;
-			padding: 2%;
-			width: 16%;
+			padding: 3%;
+			width: 14.8333333%;
 		}
 		aside#sidebar-1 {
 			background: #f6f6f6;
@@ -377,87 +386,76 @@ input[type=url] {
 
 	/* -- Footer -- */
 	footer {
-		background: rgba(0,0,0,.1);
+		background: #004a80;
 		clear: both;
 		padding: 2%;
-	}	
+	}
+	footer p {
+		font-size: 100%;
+		font-weight:bold;
+	}
+	footer p + p {
+		font-size: 80%;
+		font-weight:normal;
+	}
 
 
 /*
 	iPad Styles
 */
 
-/* iPad Horizontal */
-@media screen and (max-device-width: 1024px) {
-	body {
-		-webkit-text-size-adjust: 100%;
-	}
-	header,
-	footer {
-		float: none;
-		width: auto;
-	}
-	header h1 {
-		font-size: 400%;
-		letter-spacing: -3px;
-	}
-	#content {
-		width: 66%;
-	}
-	
-
-	aside {
-		clear: right;
-		float: right;
-		padding: 2%;
-		width: 26%;
-	}
-	aside * {
-		max-width: 100%;
-	}
-	
-	textarea {
-		max-width: 100%;
-	}
-}
-@media screen and (max-device-width: 768px) {
-	#content article img {
-		float: none;
+/* iPad Landscape */
+	@media screen and (max-width: 1024px) {
+		body {
+			-webkit-text-size-adjust: 100%;
+		}
+		header h1 {
+			font-size: 400%;
+			letter-spacing: -3px;
+		}
+		#content {
+			padding: 3%;
+			width: 63.95%;
+		}
+		aside {
+			clear: right;
+			float: right;
+			padding: 3%;
+			width: 24%;
+		}
+		aside * {
+			max-width: 100%;
+		}
+		textarea {
+			max-width: 100%;
+		}
 	}
 
-}
-/*
-	Small Screen Styles
-*/
-/*
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px) {
-
-	body {
-		-webkit-text-size-adjust: 100%;
-		padding: 1em;
+/* iPad Portrait */
+	@media all and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+		body {
+			-webkit-text-size-adjust: 100%;
+		}
+		header h1 {
+			font-size: 400%;
+			letter-spacing: -2px;
+		}
+		#content {
+			padding: 3%;
+			width: 64%;
+		}
+		aside {
+			clear: right;
+			float: right;
+			padding: 3%;
+			width: 24%;
+		}
+		aside * {
+			max-width: 100%;
+		}
 	}
-	
-	header,
-	#content,
-	aside,
-	footer {
-		float: none;
-		width: 95%;
-	}
-	
-	aside {
-		padding: 0;
-	}
 
-	#content article img {
-		float: none;
+/* iPhone */
+	@media all and (max-device-width: 480px) {
+
 	}
-	
-	textarea {
-		max-width: 100%;
-	}
-}
-
-
-
-*/
