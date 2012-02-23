@@ -227,18 +227,11 @@ input[type=url] {
 			padding: 1% 1.5%;
 			text-transform: uppercase;
 		}
-		#content article img {
-			display: block;
-			margin: 2em 0;
-			max-width: 100%;
-		}
 		#content article img.alignleft {
-			border: 1px solid #e6e6e6;
 			float: left;
 			margin: 0 2% 2% 0;
 		}
 		#content article img.alignright {
-			border: 1px solid #e6e6e6;
 			float: right;
 			margin: 0 0 2% 2%;
 		}
@@ -286,7 +279,7 @@ input[type=url] {
 }
 .post-aside p {
 	float: right;
-	width: 75%;
+	width: 85%;
 }
 .post-aside p.published {
 	float: left;
@@ -410,8 +403,12 @@ input[type=url] {
 			-webkit-text-size-adjust: 100%;
 		}
 		header h1 {
-			font-size: 400%;
+			font-size: 300%;
 			letter-spacing: -3px;
+		}
+		header p {
+			font-size: 90%;
+			padding-bottom: 1%;
 		}
 		#content {
 			padding: 3%;
@@ -456,6 +453,25 @@ input[type=url] {
 	}
 
 /* iPhone */
-	@media all and (max-device-width: 480px) {
+	@media all and (max-width: 480px) {
+		#content {
+			border-right: 0;
+			display: block;
+			float: none;
+			padding: 5%;
+			width: 90%;
+		}
+		#content img.alignleft,
+		#content img.alignright {
+			height: auto;
+			width: 40%;
+			max-width: 200px;
+		}
+		aside {
+			clear: both;
+			float: none;
+			padding: 5%;
+			width: 90%;
+		}
 
 	}
