@@ -12,140 +12,139 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 
 @import url("../tersus/style.css");
 
+/* -ƒ- Base Styles, Forms, Etc --- */
 
-body {
-	background: #fff;
-	color: #333;
-	border-top: 10px solid #00aeef;
-	font-family: 'Helvetica-Light',helvetica,arial,sans-serif;
-	line-height: 1.4;
-	margin: 0;
-	padding: 0;
-}
-
-a, a:visited {
-	background: transparent;
-	color: #00aeef;
-	text-decoration: none;
+	body {
+		background: #fff;
+		color: #333;
+		border-top: 10px solid #00aeef;
+		font-family: 'Helvetica-Light',helvetica,arial,sans-serif;
+		line-height: 1.4;
+		margin: 0;
+		padding: 0;
 	}
 
-a:hover {
-	color: #333;
-	background: #DDD;
-	}
+	a, a:visited {
+		background: transparent;
+		color: #00aeef;
+		text-decoration: none;
+		}
 
-blockquote {
-	background: #EEE;
-	margin: 1em 2em;
-	padding: 1em;
-	}
+	a:hover {
+		color: #333;
+		background: #DDD;
+		}
 
-blockquote > p:last-child {
-	margin-bottom: 0;
-	}
+	blockquote {
+		background: #EEE;
+		margin: 1em 2em;
+		padding: 1em;
+		}
 
-code {
-	background: #DDD;
-	padding: 0.3em 0.5em;
-	}
+	blockquote > p:last-child {
+		margin-bottom: 0;
+		}
 
-.post-edit-link,
-.post-edit-link:visited,
-input[type=reset],
-input[type=submit] {
-	border: none;
-	background: #AAA;
-	color: #FFF;
-	font-size: .8em;
-	cursor: pointer;
-	padding: 5px 10px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	}
+	code {
+		background: #DDD;
+		padding: 0.3em 0.5em;
+		}
 
-.post-edit-link:hover,
-input[type=reset]:hover,
-input[type=submit]:hover {
-	background: #333;
-	color: #FFF;
-	}
+	.post-edit-link,
+	.post-edit-link:visited,
+	input[type=reset],
+	input[type=submit] {
+		border: none;
+		background: #AAA;
+		color: #FFF;
+		font-size: .8em;
+		cursor: pointer;
+		padding: 5px 10px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		}
+
+	.post-edit-link:hover,
+	input[type=reset]:hover,
+	input[type=submit]:hover {
+		background: #333;
+		color: #FFF;
+		}
 	
-input[type=reset]:active,
-input[type=submit]:active {
-	background: #960;
+	input[type=reset]:active,
+	input[type=submit]:active {
+		background: #960;
+		}
+
+	textarea,
+	input[type=text],
+	input[type=email],
+	input[type=url] {
+		color: #333;
+		border: 1px solid #AAA;
+		border-radius: 3px;
+		font-size: .8em;
+		padding: .5em;
+		}
+
+	#searchform input[type=text] {
+		background: #DDD;
+		color: #333;
+		border: 1px solid transparent;
+		width: 95%;
+		}
+
+	#searchform input[type=submit] {
+		display: none;
+		}
+
+/* -ƒ- Header --- */
+
+	header {
+		background: #004a80;
+		line-height: 1;
+		margin: 0;
+		padding: 3%;
+		text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
+	}
+	header h1 {
+		font-size: 600%;
+		font-weight: normal;
+		letter-spacing: -5px;
+		margin: 0;
+	}
+	header p {
+		color: #fff;
+		font-size: 120%;
+		margin: 0;
+		padding: 0;
 	}
 
-textarea,
-input[type=text],
-input[type=email],
-input[type=url] {
-	color: #333;
-	border: 1px solid #AAA;
-	border-radius: 3px;
-	font-size: .8em;
-	padding: .5em;
+	#announcement {
+		background: rgba(255,255,255,.1);
+		border: 1px solid rgba(255,255,255,.5);
+		border-radius: 5px;
+		color: rgba(255,255,255,1);
+		line-height: 1;
+		margin: 0 0 1%;
+		padding: 1.5%;
+		text-shadow: rgba(0,0,0,.5) 0 1px 0;
+		width: 97%;
+	}
+	#announcement:hover {
+		border: 1px solid rgba(255,255,255,1);
+	}
+	#announcement h3 {
+		font-size: 120%;
+		margin: 0 0 .25em;
+		padding: 0;
+	}
+	#announcement p {
+		font-size: 80%;
 	}
 
-#searchform input[type=text] {
-	background: #DDD;
-	color: #333;
-	border: 1px solid transparent;
-	width: 95%;
-	}
-
-#searchform input[type=submit] {
-	display: none;
-	}
-
-/* -- Header -- */
-
-		header {
-			background: #004a80;
-			line-height: 1;
-			margin: 0;
-			padding: 3%;
-			text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
-		}
-		header h1 {
-			font-size: 600%;
-			font-weight: normal;
-			letter-spacing: -5px;
-			margin: 0;
-		}
-		header p {
-			color: #fff;
-			font-size: 120%;
-			margin: 0;
-			padding: 0;
-		}
-
-		#announcement {
-			background: rgba(255,255,255,.1);
-			border: 1px solid rgba(255,255,255,.5);
-			border-radius: 5px;
-			color: rgba(255,255,255,1);
-			line-height: 1;
-			margin: 0 0 1%;
-			padding: 1.5%;
-			text-shadow: rgba(0,0,0,.5) 0 1px 0;
-			width: 97%;
-		}
-		#announcement:hover {
-			border: 1px solid rgba(255,255,255,1);
-		}
-		#announcement h3 {
-			font-size: 120%;
-			margin: 0 0 .25em;
-			padding: 0;
-		}
-		#announcement p {
-			font-size: 80%;
-		}
-
-/*
-	Content
-*/
+/* -ƒ- Content --- */
 
 		#content {
 			background: #fff;
@@ -234,6 +233,31 @@ input[type=url] {
 		#content article img.alignright {
 			float: right;
 			margin: 0 0 2% 2%;
+		}
+		article aside {
+			display: block;
+			float: none;
+			overflow: auto;
+			padding: 0;
+			width: 100%;
+		}
+		article aside dl {
+			float: left;
+			margin: 0 1% 1% 0;
+			padding: 0;
+		}
+		article aside dl dt {
+			margin: 0;
+			padding: 0;
+		}
+		article aside dl dt img {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		article aside dl dd {}
+		article aside dl.last + dl {
+			clear: left;
 		}
 		
 		#content ul.post-meta {
