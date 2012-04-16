@@ -271,74 +271,90 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 			display: block;
 			overflow: auto;
 		}
-		#content ul.post-meta li h6 {
+		#content h6:last-of-type,
+		#content h6:nth-last-of-type(2),
+		#content h6:nth-last-of-type(3) {
 			color: #999;
 			float: left;
-			font-size: 70%;
-			text-transform: uppercase;
-			width: 25%;
-		}
-		#content ul.post-meta li p {
 			font-size: 80%;
-			margin: 0;
+			text-transform: uppercase;
+			width: 20%;
 		}
-		#content ul.post-meta li ul {
+		
+		#content h6:last-of-type + p,
+		#content h6:nth-last-of-type(2) + p,
+		#content h6:nth-last-of-type(3) + p  {
 			font-size: 80%;
 			margin: 0;
 			padding: 0;
 			text-indent: 0;
 		}
-		#content ul.post-meta li ul li {
-			display:inline;
-			margin: 0 5px 0 0;
+		#content p:nth-last-of-type(2) {
+			background: #00aeef;
+			border-radius: 25px;
+			color: #fff;
+			display: inline-block;
+			font-size: 80%;
+			font-weight: bold;
+			margin: 3% 0;
+			padding: 1% 2%;
+			}
+		#content p:nth-last-of-type(2) a {
+			color: #fff;
 		}
 		
+		
 
-/*
-	Post Format Styles
-*/
+/* -ƒ- Post Format Styles --- */
 
-.post-aside {
-	overflow: auto;
-}
-.post-aside p {
-	float: right;
-	width: 85%;
-}
-.post-aside p.published {
-	float: left;
-	width: auto;
-}
+	/* Post Format: Aside */
 	
-.post-quote h2,
-.post-quote h2 + p {
-	display: none;
-	}
-
-.post-quote blockquote {
-	margin: 0 0 5%;
-	padding: 5%;
-	}
-
-.post-quote blockquote p {
-	font: normal 1.4em/1.4 georgia,times,serif;
-	margin: 0 0 .2em;
-	}
+		#content article.post-aside {
+			background: #e6e6e6;
+			border: solid #d5d5d5;
+			border-width: 0 0 0 10px;
+			font-weight: bold;
+			overflow: auto;
+			padding: 2%;
+			text-shadow: #fff 0 1px 0;
+		}
+		.post-aside p {
+			margin: 0;
+		}
+		.post-aside p.published {
+			float: left;
+			width: auto;
+		}
+		#content .post-aside p:last-of-type,
+		#content .post-aside p:nth-last-of-type(2) { display: none; }
+		
+	/* Post Format: Quote */
 	
-.post-quote p cite {
-	display: block;
-	font: bold 60% sans-serif;
-	text-align: right;
-	}
-	
-.post-quote blockquote + p,
-.post-quote blockquote + p + p,
-.post-quote blockquote + p + ul,
-.post-quote blockquote + p + ul + p,
-.post-quote blockquote + p + p + ul {
-	display: none;
-	}
-.post-quote ul.post-meta { display: none; }
+		.post-quote h2,
+		.post-quote h2 + p {
+			display: none;
+			}
+		.post-quote blockquote {
+			margin: 0 0 5%;
+			padding: 5%;
+			}
+		.post-quote blockquote p {
+			font: normal 1.4em/1.4 georgia,times,serif;
+			margin: 0 0 .2em;
+			}
+		.post-quote p cite {
+			display: block;
+			font: bold 60% sans-serif;
+			text-align: right;
+			}
+		.post-quote blockquote + p,
+		.post-quote blockquote + p + p,
+		.post-quote blockquote + p + ul,
+		.post-quote blockquote + p + ul + p,
+		.post-quote blockquote + p + p + ul {
+			display: none;
+			}
+		.post-quote ul.post-meta { display: none; }
 
 
 	/* -- Sidebars -- */
