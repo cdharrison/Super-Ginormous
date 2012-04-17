@@ -226,6 +226,10 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 			padding: 1% 1.5%;
 			text-transform: uppercase;
 		}
+		#content article img.alignnone.size-full {
+			width: 100%;
+			max-width: 100%;
+		}
 		#content article img.alignleft {
 			float: left;
 			margin: 0 2% 2% 0;
