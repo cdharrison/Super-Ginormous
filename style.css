@@ -552,6 +552,38 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 
 /* iPhone */
 	@media all and (max-width: 480px) {
+		header {
+			padding: 5%;
+		}
+		header h1 {
+			font-size: 36px;
+			letter-spacing: 0;
+			line-height: 1.4;
+			margin: 0;
+			padding: 0;
+		}
+		header p {
+			font-size: 12px;
+			line-height: 1.4;
+			margin: 0;
+			padding: 0;
+		}
+		#announcement {
+			line-height: 1.4;
+			margin: 0 auto 2.5%;
+			padding: 2.5%;
+			width: 94%;
+		}
+		#announcement h3 {
+			font-size: 12px;
+			margin: 0;
+		}
+		#announcement p {
+			font-size: 12px;
+			margin: 0;
+			padding: 0;
+		}
+			
 		#content {
 			border-right: 0;
 			display: block;
@@ -559,12 +591,32 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 			padding: 5%;
 			width: 90%;
 		}
+		#content h6:last-of-type,
+		#content h6:nth-last-of-type(2),
+		#content h6:nth-last-of-type(3) {
+			color: #999;
+			float: none;
+			font-size: 11px;
+			text-transform: uppercase;
+			width: 100%;
+		}
+		#content h6:last-of-type + p,
+		#content h6:nth-last-of-type(2) + p,
+		#content h6:nth-last-of-type(3) + p  {
+			font-size: 11px;
+			margin: 0 0 .75em;
+		}
+		
 		#content img.alignleft,
 		#content img.alignright {
 			height: auto;
-			width: 40%;
+			width: 50%;
 			max-width: 200px;
 		}
+		article h2, #content h2 {
+			font-size: 28px;
+		}
+		
 		aside {
 			clear: both;
 			float: none;
