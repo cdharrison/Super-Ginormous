@@ -329,32 +329,39 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 		#content .post-aside p:nth-last-of-type(2) { display: none; }
 		
 	/* Post Format: Quote */
+		.post-quote {		
+		}
 	
 		.post-quote h2,
 		.post-quote h2 + p {
 			display: none;
 			}
 		.post-quote blockquote {
+			background: rgb(242,245,246); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+			background: linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */	
+			font: normal 1.6em/1.4 georgia,times,serif;
 			margin: 0 0 5%;
 			padding: 5%;
 			}
 		.post-quote blockquote p {
-			font: normal 1.4em/1.4 georgia,times,serif;
 			margin: 0 0 .2em;
 			}
-		.post-quote p cite {
+		.post-quote cite {
 			display: block;
-			font: bold 60% sans-serif;
+			font-size: 10px;
+			font-weight: bold;
+			margin: 1em 0 0;
 			text-align: right;
+			text-transform: uppercase;
 			}
-		.post-quote blockquote + p,
-		.post-quote blockquote + p + p,
-		.post-quote blockquote + p + ul,
-		.post-quote blockquote + p + ul + p,
-		.post-quote blockquote + p + p + ul {
-			display: none;
-			}
-		.post-quote ul.post-meta { display: none; }
+		.post-quote h6,
+		.post-quote h6 + p { display: none; }
 
 
 	/* -- Sidebars -- */
@@ -391,7 +398,9 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 	aside ul li ul li {
 		margin: 0;
 		}
-
+	aside ul li a {
+		font-weight: bold;
+		}
 	aside ul li ul li ul {
 		margin: 0 0 0 1em;
 		}
@@ -403,19 +412,64 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 		padding: 0 0 .5em 0;
 		}
 
-	aside ul li#flickrrss {
-			overflow: auto;
+
+	/* -ƒ- FlickrRSS --- */
+		aside ul li.widget_flickrRSS {
+				overflow: auto;
+			}
+		aside ul li.widget_flickrRSS img {
+			border: solid #e6e6e6;
+			border-width: 2%;
+			float: left;
+			margin: 0 0 2% 0;
+			width: 42%;
 		}
-	aside ul li#flickrrss img {
-		border: solid #e6e6e6;
-		border-width: 2%;
-		float: left;
-		margin: 0 0 2% 0;
-		width: 42%;
-	}
-	aside ul li#flickrrss img:nth-child(odd) {
-		margin: 0 2% 2% 2%;
-	}
+		aside ul li.widget_flickrRSS img:nth-child(odd) {
+			margin: 0 2% 2% 2%;
+		}
+		
+	/* -ƒ- Twitter --- */
+		aside ul li.widget_twitter {
+			overflow: none;
+		}
+		aside ul li.widget_twitter ul.tweets {}
+		aside ul li.widget_twitter ul.tweets li {
+			border-bottom: 1px dotted #e6e6e6;
+			font-size: 12px;
+			margin: 0 0 5%;
+			padding: 0 0 5%;
+		}
+		side ul li.widget_twitter ul.tweets li:last-of-type {
+			border-bottom: 0;
+		}
+		aside ul li.widget_twitter ul.tweets li a {
+			font-weight: bold;	
+		}
+		aside ul li.widget_twitter ul.tweets li a.timesince {
+			color: #aaa;
+			display: block;
+			font-size: 9px;
+			font-weight: bold;
+			margin: 2.5% 0 0;
+			text-align: right;
+			text-transform: uppercase;
+		}
+		
+	/* -ƒ- Meta Widget --- */
+		aside ul li.widget_meta {
+			
+		}
+		aside ul li.widget_meta ul {
+			font-size: 12px;
+			list-style: square;
+			margin: 0 0 0 2em;
+			padding: 0;
+			text-indent: 0;
+		}
+		aside ul li.widget_meta ul li {
+			list-style: square;
+		}
+
 
 	/* -- Footer -- */
 	footer {
