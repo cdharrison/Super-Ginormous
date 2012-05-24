@@ -18,7 +18,7 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 		background: #fff;
 		color: #333;
 		border-top: 10px solid #00aeef;
-		font-family: 'Helvetica-Light',helvetica,arial,sans-serif;
+		font-family: helvetica,arial,sans-serif;
 		line-height: 1.4;
 		margin: 0;
 		padding: 0;
@@ -107,19 +107,19 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 		margin: 0;
 		padding: 3%;
 		text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
-	}
+		}
 	header h1 {
 		font-size: 600%;
 		font-weight: normal;
 		letter-spacing: -5px;
 		margin: 0;
-	}
+		}
 	header p {
 		color: #fff;
 		font-size: 120%;
 		margin: 0;
 		padding: 0;
-	}
+		}
 
 	#announcement {
 		background: rgba(255,255,255,.1);
@@ -131,274 +131,248 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 		padding: 1.5%;
 		text-shadow: rgba(0,0,0,.5) 0 1px 0;
 		width: 97%;
-	}
+		}
 	#announcement:hover {
 		border: 1px solid rgba(255,255,255,1);
-	}
+		}
 	#announcement h3 {
 		font-size: 120%;
 		margin: 0 0 .25em;
 		padding: 0;
-	}
+		}
 	#announcement p {
 		font-size: 80%;
-	}
+		}
 
 /* -ƒ- Content --- */
 
-		#content {
-			background: #fff;
-			border-right: 1px dotted #e6e6e6;
-			float: left;
-			margin: 0;
-			padding: 3%;
-			width: 52.333333333%;
-			}
+	#content {
+		background: #fff;
+		border-right: 1px dotted #e6e6e6;
+		float: left;
+		margin: 0;
+		padding: 3%;
+		width: 52.333333333%;
+		}
 
-		#content > h1 {
-			color: #960;
-			font-weight: normal;
-			font-size: 2em;
-			line-height: 1;
-			margin: 0 0 1%;
-			}
+	#content > h1 {
+		color: #960;
+		font-weight: normal;
+		font-size: 2em;
+		line-height: 1;
+		margin: 0 0 1%;
+		}
 
-		#content > h1 + p {
-			color: #AAA;
-			font: normal 1em sans-serif;
-			font-style: italic;
-			margin: 0 0 2%;
-			}
-	
-		article h2,
-		#content h2 {
-			background: transparent;
-			font-size: 300%;
-			letter-spacing: -1px;
-			line-height: 1;
-			margin: 0 0 .25em 0;
-			padding: 0;
+	#content > h1 + p {
+		color: #AAA;
+		font: normal 1em sans-serif;
+		font-style: italic;
+		margin: 0 0 2%;
+		}	
+	article h2,
+	#content h2 {
+		background: transparent;
+		font-size: 300%;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0 0 .25em 0;
+		padding: 0;
+	}
+	#content > h2 {
+	    border-bottom: 1px solid #AAA;
+	    padding: 0 0 .75em 0;
+	    margin: 0 0 .5em 0;
+	}
+	#content ul.cat-children {
+		background: #f7f7f7;
+		line-height: 1;
+		list-style: none;
+		margin: 0 0 5%;
+		overflow: auto;
+		padding: 3%;
+		text-indent: 0;
 		}
-		#content > h2 {
-		    border-bottom: 1px solid #AAA;
-		    padding: 0 0 .75em 0;
-		    margin: 0 0 .5em 0;
+	#content ul.cat-children li {
+		list-style:none;
+		margin:0 1em 0 0;
+		padding: 0;
 		}
-		#content ul.cat-children {
-			background: #f7f7f7;
-			line-height: 1;
-			list-style: none;
-			margin: 0 0 5%;
-			overflow: auto;
-			padding: 3%;
-			text-indent: 0;
-			}
-
-		#content ul.cat-children li {
-			list-style:none;
-			margin:0 1em 0 0;
-			padding: 0;
-			}
-
-		#content ul.cat-children li + li {
-			float: left;
-			}
-
-		#content ul.cat-children li strong {
-			color: #999;
-			font-size: 50%;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			}
-
-		#content article {
-			border-bottom: 1px solid #AAA;
-			margin: 0 0 2em 0;
-			padding: 0 0 1em 0;
-			}
-		#content article p[title] {
-			background: #00aeef;
-			box-shadow: rgba(0,0,0,0) 2px 2px 0;
-			color: #fff;
-			display: inline-block;
-			font-size: .7em;
-			font-weight: bold;
-			padding: 1% 1.5%;
-			text-transform: uppercase;
+	#content ul.cat-children li + li {
+		float: left;
 		}
-		#content article img.alignnone.size-full {
-			width: 100%;
-			max-width: 100%;
+	#content ul.cat-children li strong {
+		color: #999;
+		font-size: 50%;
+		letter-spacing: 1px;
+		text-transform: uppercase;
 		}
-		#content article img.alignleft {
-			float: left;
-			margin: 0 2% 2% 0;
+	#content article {
+		border-bottom: 1px solid #AAA;
+		margin: 0 0 2em 0;
+		padding: 0 0 1em 0;
 		}
-		#content article img.alignright {
-			float: right;
-			margin: 0 0 2% 2%;
+	.published {
+		background: #00aeef;
+		box-shadow: rgba(0,0,0,0) 2px 2px 0;
+		color: #fff;
+		display: inline-block;
+		font-size: .7em;
+		font-weight: bold;
+		padding: 1% 1.5%;
+		text-transform: uppercase;
 		}
-		article aside {
-			display: block;
-			float: none;
-			overflow: auto;
-			padding: 0;
-			width: 100%;
+	#content article img.alignnone.size-full {
+		width: 100%;
+		max-width: 100%;
 		}
-		article aside dl {
-			float: left;
-			margin: 0 1% 1% 0;
-			padding: 0;
+	#content article img.alignleft {
+		float: left;
+		margin: 0 2% 2% 0;
 		}
-		article aside dl dt {
-			margin: 0;
-			padding: 0;
+	#content article img.alignright {
+		float: right;
+		margin: 0 0 2% 2%;
 		}
-		article aside dl dt img {
-			display: block;
-			margin: 0;
-			padding: 0;
+	article aside {
+		display: block;
+		float: none;
+		overflow: auto;
+		padding: 0;
+		width: 100%;
 		}
-		article aside dl dd {}
-		article aside dl.last + dl {
-			clear: left;
+	article aside dl {
+		float: left;
+		margin: 0 1% 1% 0;
+		padding: 0;
 		}
-		
-		#content ul.post-meta {
-			
-			list-style: none;
-			margin: 0 0 2%;
-			padding: 0;
-			text-indent: 0;
+	article aside dl dt {
+		margin: 0;
+		padding: 0;
 		}
-		#content ul.post-meta li {
-			display: block;
-			overflow: auto;
+	article aside dl dt img {
+		display: block;
+		margin: 0;
+		padding: 0;
 		}
-		#content h6:last-of-type,
-		#content h6:nth-last-of-type(2),
-		#content h6:nth-last-of-type(3) {
-			color: #999;
-			float: left;
-			font-size: 80%;
-			text-transform: uppercase;
-			width: 20%;
+	article aside dl dd {}
+	article aside dl.last + dl {
+		clear: left;
 		}
-		
-		#content h6:last-of-type + p,
-		#content h6:nth-last-of-type(2) + p,
-		#content h6:nth-last-of-type(3) + p  {
-			font-size: 80%;
-			margin: 0;
-			padding: 0;
-			text-indent: 0;
+	#content ul.post-meta {
+		list-style: none;
+		margin: 0 0 2%;
+		padding: 0;
+		text-indent: 0;
 		}
-		#content p:nth-last-of-type(2) {
-			background: #00aeef;
-			border-radius: 25px;
-			color: #fff;
-			display: inline-block;
-			font-size: 80%;
-			font-weight: bold;
-			margin: 3% 0;
-			padding: 1% 2%;
-			}
-		#content p:nth-last-of-type(2) a {
-			color: #fff;
+	#content ul.post-meta li {
+		display: block;
+		overflow: auto;
 		}
-		
-		
 
 /* -ƒ- Post Format Styles --- */
 
 	/* Post Format: Aside */
 	
-		#content article.post-aside {
-			background: #e6e6e6;
-			border: solid #d5d5d5;
-			border-width: 0 0 0 10px;
-			font-weight: bold;
-			overflow: auto;
-			padding: 2%;
-			text-shadow: #fff 0 1px 0;
+	#content article.post-aside {
+		background: #e6e6e6;
+		border: solid #d5d5d5;
+		border-width: 0 0 0 10px;
+		overflow: auto;
+		padding: 2%;
+		text-shadow: #fff 0 1px 0;
 		}
-		.post-aside p {
-			margin: 0;
+	.post-aside p {
+		margin: 0;
 		}
-		.post-aside p.published {
-			float: left;
-			width: auto;
+	.post-aside p.published {
+		float: left;
+		width: auto;
 		}
-		#content .post-aside p:last-of-type,
-		#content .post-aside p:nth-last-of-type(2) { display: none; }
+	#content .post-aside p:last-of-type,
+	#content .post-aside p:nth-last-of-type(2) {
+		display: none;
+		}
+		
+		
+	.post-link {}
+	.post-link h6,
+	.post-link p,
+	.post-link .published,
+	.post-link .entry-title {
+		display: none;
+	}
+	.post-link h2 + p {
+		background: url(i/ico-pushpin.png) no-repeat;
+		display: block;
+		font-size: 20px;
+		padding: 0 0 0 32px;
+	}
 		
 	/* Post Format: Quote */
-		.post-quote {		
-		}
 	
-		.post-quote h2,
-		.post-quote h2 + p {
-			display: none;
-			}
-		.post-quote blockquote {
-			background: rgb(242,245,246); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
-			background: linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */	
-			font: normal 1.6em/1.4 georgia,times,serif;
-			margin: 0 0 5%;
-			padding: 5%;
-			}
-		.post-quote blockquote p {
-			margin: 0 0 .2em;
-			}
-		.post-quote cite {
-			display: block;
-			font-size: 10px;
-			font-weight: bold;
-			margin: 1em 0 0;
-			text-align: right;
-			text-transform: uppercase;
-			}
-		.post-quote h6,
-		.post-quote h6 + p { display: none; }
-
-
-	/* -- Sidebars -- */
-		aside {
-			float: right;
-			margin: 0;
-			padding: 3%;
-			width: 14.8333333%;
+	.post-quote {}
+	
+	.post-quote h2,
+	.post-quote h2 + p {
+		display: none;
 		}
-		aside#sidebar-1 {
-			background: #f6f6f6;
+	.post-quote blockquote {
+		background: rgb(242,245,246); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+		background: linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */	
+		font: normal 1.6em/1.4 georgia,times,serif;
+		margin: 0 0 5%;
+		padding: 5%;
 		}
-		aside#sidebar-2 {
-			background: #fff;
+	.post-quote blockquote p {
+		margin: 0 0 .2em;
+		}
+	.post-quote cite {
+		display: block;
+		font-size: 10px;
+		font-weight: bold;
+		margin: 1em 0 0;
+		text-align: right;
+		text-transform: uppercase;
+		}
+	.post-quote h6,
+	.post-quote h6 + p {
+		display: none;
 		}
 
+/* -- Sidebars -- */
+	
+	aside {
+		float: right;
+		margin: 0;
+		padding: 3%;
+		width: 14.8333333%;
+		}
+	aside#sidebar-1 {
+		background: #f6f6f6;
+		}
+	aside#sidebar-2 {
+		background: #fff;
+		}
 	aside ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		text-indent: 0;
 		}
-
 	aside ul li {
 		list-style: none;
 		margin:0 0 1.5em;
 		}
-
 	aside ul li form,
 	aside ul li ul {
 		margin: 0 0 2em 0;
 		}
-
 	aside ul li ul li {
 		margin: 0;
 		}
@@ -408,189 +382,203 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 	aside ul li ul li ul {
 		margin: 0 0 0 1em;
 		}
-
 	aside h2 {
 		border-bottom: 1px solid #AAA;
 		font-size: 1em;
 		margin: 0 0 .5em 0;
 		padding: 0 0 .5em 0;
 		}
+	.widget_image img {
+		height: auto;
+		width: 100%;
+	}
 
+/* -ƒ- FlickrRSS --- */
 
-	/* -ƒ- FlickrRSS --- */
-		aside ul li.widget_flickrRSS {
-				overflow: auto;
-			}
-		aside ul li.widget_flickrRSS img {
-			border: solid #e6e6e6;
-			border-width: 2%;
-			float: left;
-			margin: 0 0 2% 0;
-			width: 42%;
+	aside ul li.widget_flickrRSS {
+		overflow: auto;
 		}
-		aside ul li.widget_flickrRSS img:nth-child(odd) {
-			margin: 0 2% 2% 2%;
+	aside ul li.widget_flickrRSS img {
+		border: solid #e6e6e6;
+		border-width: 2%;
+		float: left;
+		margin: 0 0 2% 0;
+		width: 42%;
+		}
+	aside ul li.widget_flickrRSS img:nth-child(odd) {
+		margin: 0 2% 2% 2%;
 		}
 		
-	/* -ƒ- Twitter --- */
-		aside ul li.widget_twitter {
-			overflow: none;
+/* -ƒ- Twitter --- */
+
+	aside ul li.widget_twitter {
+		overflow: none;
 		}
-		aside ul li.widget_twitter ul.tweets {}
-		aside ul li.widget_twitter ul.tweets li {
-			border-bottom: 1px dotted #e6e6e6;
-			font-size: 12px;
-			margin: 0 0 5%;
-			padding: 0 0 5%;
+	aside ul li.widget_twitter ul.tweets {}
+	aside ul li.widget_twitter ul.tweets li {
+		border-bottom: 1px dotted #e6e6e6;
+		font-size: 12px;
+		margin: 0 0 5%;
+		padding: 0 0 5%;
 		}
-		side ul li.widget_twitter ul.tweets li:last-of-type {
-			border-bottom: 0;
+	side ul li.widget_twitter ul.tweets li:last-of-type {
+		border-bottom: 0;
 		}
-		aside ul li.widget_twitter ul.tweets li a {
-			font-weight: bold;	
+	aside ul li.widget_twitter ul.tweets li a {
+		font-weight: bold;	
 		}
-		aside ul li.widget_twitter ul.tweets li a.timesince {
-			color: #aaa;
-			display: block;
-			font-size: 9px;
-			font-weight: bold;
-			margin: 2.5% 0 0;
-			text-align: right;
-			text-transform: uppercase;
+	aside ul li.widget_twitter ul.tweets li a.timesince {
+		color: #aaa;
+		display: block;
+		font-size: 9px;
+		font-weight: bold;
+		margin: 2.5% 0 0;
+		text-align: right;
+		text-transform: uppercase;
 		}
 		
-	/* -ƒ- Meta Widget --- */
-		aside ul li.widget_meta {
-			
+/* -ƒ- Meta Widget --- */
+	
+	aside ul li.widget_meta {}
+	aside ul li.widget_meta ul {
+		font-size: 12px;
+		list-style: square;
+		margin: 0 0 0 2em;
+		padding: 0;
+		text-indent: 0;
 		}
-		aside ul li.widget_meta ul {
-			font-size: 12px;
-			list-style: square;
-			margin: 0 0 0 2em;
-			padding: 0;
-			text-indent: 0;
-		}
-		aside ul li.widget_meta ul li {
-			list-style: square;
+	aside ul li.widget_meta ul li {
+		list-style: square;
 		}
 
+/* -- Footer -- */
 
-	/* -- Footer -- */
 	footer {
 		background: #004a80;
 		clear: both;
 		padding: 2%;
-	}
+		}
 	footer p {
 		font-size: 100%;
-		font-weight:bold;
-	}
+		font-weight: bold;
+		}
 	footer p + p {
 		font-size: 80%;
-		font-weight:normal;
-	}
+		font-weight: normal;
+		}
 
-
-/*
-	iPad Styles
-*/
 
 /* iPad Landscape */
+
 	@media screen and (max-width: 1024px) {
+	
 		body {
 			-webkit-text-size-adjust: 100%;
-		}
+			}
 		header h1 {
 			font-size: 300%;
 			letter-spacing: -3px;
-		}
+			}
 		header p {
 			font-size: 90%;
 			padding-bottom: 1%;
-		}
+			}
 		#content {
 			padding: 3%;
 			width: 63.95%;
-		}
+			}
 		aside {
 			clear: right;
 			float: right;
 			padding: 3%;
 			width: 24%;
-		}
+			}
 		aside * {
 			max-width: 100%;
-		}
+			}
 		textarea {
 			max-width: 100%;
-		}
+			}
 	}
 
 /* iPad Portrait */
+
 	@media all and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+	
 		body {
 			-webkit-text-size-adjust: 100%;
-		}
+			}
 		header h1 {
 			font-size: 400%;
 			letter-spacing: -2px;
-		}
+			}
 		#content {
 			padding: 3%;
 			width: 64%;
-		}
+			}
 		aside {
 			clear: right;
 			float: right;
 			padding: 3%;
 			width: 24%;
-		}
+			}
 		aside * {
 			max-width: 100%;
+			}
 		}
-	}
 
 /* iPhone */
+
 	@media all and (max-width: 480px) {
+	
 		header {
 			padding: 5%;
-		}
+			}
 		header h1 {
 			font-size: 36px;
-			letter-spacing: 0;
+			letter-spacing: -1px;
 			line-height: 1.4;
 			margin: 0;
 			padding: 0;
-		}
+			}
 		header p {
-			font-size: 12px;
+			font-size: 13px;
 			line-height: 1.4;
 			margin: 0;
 			padding: 0;
-		}
+			}
 		#announcement {
 			line-height: 1.4;
 			margin: 0 auto 2.5%;
 			padding: 2.5%;
 			width: 94%;
-		}
+			}
 		#announcement h3 {
 			font-size: 12px;
 			margin: 0;
-		}
+			}
 		#announcement p {
 			font-size: 12px;
 			margin: 0;
 			padding: 0;
-		}
-			
+			}
 		#content {
 			border-right: 0;
 			display: block;
 			float: none;
 			padding: 5%;
 			width: 90%;
-		}
+			}
+		#content article p {
+			font-size: 13px;
+			}
+		#content article blockquote {
+			font-size: 13px;
+			}
+		#content .post-aside p:last-of-type { display: none; }
+		#content .post-aside p:nth-last-of-type(2) {
+			display: block;
+			}
 		#content h6:last-of-type,
 		#content h6:nth-last-of-type(2),
 		#content h6:nth-last-of-type(3) {
@@ -599,29 +587,26 @@ Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 			font-size: 11px;
 			text-transform: uppercase;
 			width: 100%;
-		}
+			}
 		#content h6:last-of-type + p,
 		#content h6:nth-last-of-type(2) + p,
 		#content h6:nth-last-of-type(3) + p  {
 			font-size: 11px;
 			margin: 0 0 .75em;
-		}
-		
+			}
 		#content img.alignleft,
 		#content img.alignright {
 			height: auto;
 			width: 50%;
 			max-width: 200px;
-		}
+			}
 		article h2, #content h2 {
 			font-size: 28px;
-		}
-		
+			}
 		aside {
 			clear: both;
 			float: none;
 			padding: 5%;
 			width: 90%;
+			}
 		}
-
-	}
