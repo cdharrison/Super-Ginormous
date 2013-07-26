@@ -1,0 +1,18 @@
+footer {
+	background: $sgBlue;
+	color: #fff;
+	clear: both;
+	padding: 2%;
+	p {
+		font-size: 100%;
+		font-weight: 100;
+		& + p {
+			font-size: 80%;
+			font-weight: normal;
+		}
+	}
+	a{
+		color: #fff;
+		font-weight: bold;
+	}
+}

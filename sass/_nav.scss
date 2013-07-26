@@ -1,0 +1,29 @@
+nav[role="navigation"] {
+	background: #333;
+	overflow: auto;
+	& > a {
+		color: #fff;
+		float: left;
+		font-weight: bold;
+		padding: 1em 2em;
+		position: relative;
+		text-decoration: none;
+		&:hover,
+		&:visited{
+			background: #00afee;
+			color: #fff;
+			&:after{
+				content: "";
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #fff;
+				height: 0;
+				position: absolute;
+				width: 0;
+				bottom: 0;
+				left: 42.5%;
+			}
+		}
+		
+	}
+}

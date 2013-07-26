@@ -1,0 +1,109 @@
+aside {
+	float: right;
+	margin: 0;
+	padding: 1.25%;
+	width: 20%;
+	&#sidebar-1 {
+		background: #f6f6f6;
+		border-left: 1px dotted $lightGray;
+	}
+	&#sidebar-2 {
+		background: #fff;
+	}
+	.widget_image img {
+		height: auto;
+		width: 100%;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-indent: 0;
+		li {
+			list-style: none;
+			margin:0 0 1.5em;
+			h2 {
+				border-bottom: 1px solid #AAA;
+				font-size: 1em;
+				margin: 0 0 .5em 0;
+				padding: 0 0 .5em 0;
+			}
+			a {
+				font-weight: bold;
+			}
+			form{
+				margin: 0 0 2em;
+			}
+			ul {
+				margin: 0 0 2em;
+				li {
+					margin: 0;
+					ul {
+						margin: 0 0 0 1em;
+					}
+				}
+			}
+			// Generic Text Widgets
+			.textwidget{
+				img{
+					height: auto;
+					max-width: 100%;
+				}
+			}
+			// Flickr Widget
+			&.widget_flickrRSS {
+				overflow: auto;
+			    img {
+					border: solid #e6e6e6;
+					border-width: 2%;
+					float: left;
+					margin: 0 0 2% 0;
+					width: 42%;
+					&:nth-child(odd) {
+						margin: 0 2% 2% 2%;
+					}
+				}
+			}
+			// Twitter Widget
+			&.widget_twitter {
+				overflow: none;
+				ul.tweets {
+					li {
+						border-bottom: 1px dotted #e6e6e6;
+						font-size: 12px;
+						margin: 0 0 5%;
+						padding: 0 0 5%;
+						&:last-of-type {
+							border-bottom: 0;
+						}
+						a {
+							font-weight: bold;
+							&.timesince {
+								color: #aaa;
+								display: block;
+								font-size: 9px;
+								font-weight: bold;
+								margin: 2.5% 0 0;
+								text-align: right;
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+			}
+			// Meta Widget
+			&.widget_meta {
+				ul {
+					font-size: 12px;
+					list-style: square;
+					margin: 0 0 0 2em;
+					padding: 0;
+					text-indent: 0;
+					li {
+						list-style: square;
+					}
+				}
+			}
+		}
+	}
+}

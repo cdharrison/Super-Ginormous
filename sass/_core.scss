@@ -1,0 +1,78 @@
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	color: #333;
+	border-top: 10px solid #00aeef;
+	font-family: helvetica,arial,sans-serif;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+}
+
+a, a:visited {
+	background: transparent;
+	color: #00aeef;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	background: #DDD;
+}
+
+blockquote {
+background: #EEE;
+margin: 1em 2em;
+padding: 1em;
+	& > p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+code {
+	background: #DDD;
+	padding: 0.3em 0.5em;
+}
+
+.post-edit-link,
+.post-edit-link:visited,
+input[type=reset],
+input[type=submit] {
+	border: none;
+	background: #AAA;
+	color: #FFF;
+	font-size: .8em;
+	cursor: pointer;
+	padding: 5px 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	&:hover{
+		background: #333;
+		color: #FFF;
+	}
+	&:active{
+		background: #960;
+	}
+}
+
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=url] {
+	color: #333;
+	border: 1px solid #AAA;
+	border-radius: 3px;
+	font-size: .8em;
+	padding: .5em;
+}

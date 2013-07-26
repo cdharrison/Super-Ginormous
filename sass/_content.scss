@@ -1,0 +1,197 @@
+#content {
+	border-right: 1px dotted $lightGray;
+	float: left;
+	margin: 0;
+	padding: 1.25%;
+	width: 60%;
+	&  > h1 {
+		color: #960;
+		font-weight: normal;
+		font-size: 2em;
+		line-height: 1;
+		margin: 0 0 1%;
+		& + p {
+			color: #AAA;
+			font: normal 1em sans-serif;
+			font-style: italic;
+			margin: 0 0 2%;
+		}	
+	}
+	& > h1,
+	h2 {
+		background: transparent;
+		font-size: 300%;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0 0 .25em 0;
+		padding: 0;
+	}
+    > h2 {
+		border-bottom: 1px solid #AAA;
+		padding: 0 0 .75em 0;
+		margin: 0 0 .5em 0;
+	}
+	ul.cat-children {
+		background: #f7f7f7;
+		line-height: 1;
+		list-style: none;
+		margin: 0 0 5%;
+		overflow: auto;
+		padding: 3%;
+		text-indent: 0;
+		li {
+			list-style:none;
+			margin:0 1em 0 0;
+			padding: 0;
+			& + li {
+				float: left;
+			}
+			strong {
+				color: #999;
+				font-size: 50%;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	article {
+		border-bottom: 1px solid #AAA;
+		margin: 0 0 2em 0;
+		padding: 0 0 1em 0;
+		
+		// Published Date
+		.published {
+			background: #00aeef;
+			box-shadow: rgba(0,0,0,0) 2px 2px 0;
+			color: #fff;
+			display: inline-block;
+			font-size: .7em;
+			font-weight: bold;
+			padding: 1% 1.5%;
+			text-transform: uppercase;
+		}
+		img{
+			&.alignnone.size-large,
+			&.size-full {
+				display: block;
+				height: auto;
+				width: 100%;
+				max-width: 100%;
+			}
+			&.alignleft {
+				float: left;
+				margin: 0 2% 2% 0;
+			}
+			&.alignright {
+				float: right;
+				margin: 0 0 2% 2%;
+			}
+			& + br{
+				display: none;
+			}
+		}
+		aside {
+			display: block;
+			float: none;
+			overflow: auto;
+			padding: 0;
+			width: 100%;
+			dl {
+				float: left;
+				margin: 0 1% 1% 0;
+				padding: 0;
+				dt {
+					margin: 0;
+					padding: 0;
+					img {
+						display: block;
+						margin: 0;
+						padding: 0;
+					}
+				}
+				dd{}
+				&.last + dl{
+					clear: left;
+				}
+			}
+		}
+		ul.post-meta{
+			list-style: none;
+			margin: 0 0 2%;
+			padding: 0;
+			text-indent: 0;
+			li {
+				display: block;
+				overflow: auto;
+			}
+		}
+		
+		// Post Format: Aside
+		&.post-aside{
+			background: #e6e6e6;
+			border: solid #d5d5d5;
+			border-width: 0 0 0 10px;
+			overflow: auto;
+			padding: 2%;
+			text-shadow: #fff 0 1px 0;
+			p {
+				margin: 0;
+				&.published {
+					float: left;
+					width: auto;
+				}
+				&:last-of-type,
+				&:nth-last-of-type(2) {
+					display: none;
+				}
+			}
+		}
+		
+		// Post Format: Link
+		&.post-link{
+			h6,
+			p,
+			.published,
+			.entry-title{
+				display: none;
+			}
+			h2 + p{
+				background: url(i/ico-pushpin.png) no-repeat;
+				display: block;
+				font-size: 20px;
+				padding: 0 0 0 32px;
+			}
+		}
+		
+		// Post Format: Quote
+		&.post-quote{
+			h2, h2 + p, h6, h6 + p {
+				display: none;
+			}
+			blockquote {
+				background: rgb(242,245,246); /* Old browsers */
+				background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+				background: linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */	
+				font: normal 1.6em/1.4 georgia,times,serif;
+				margin: 0 0 5%;
+				padding: 5%;
+				p {
+					margin: 0 0 .2em;
+				}
+				cite {
+					display: block;
+					font-size: 10px;
+					font-weight: bold;
+					margin: 1em 0 0;
+					text-align: right;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
