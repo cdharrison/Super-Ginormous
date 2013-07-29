@@ -13,25 +13,18 @@
 //	Variables
 	$lightGray: #aaa;
 	$sgBlue: #004a80;
+	$fontHeadings: 'Alfa Slab One',serif;
+	$fontBody: 'Helvetica Neue',helvetica,sans-serif;
+	
+/*	Import Tersus Core Styles ----- */
+	@import url("../tersus/style.css");
 
-@import url("../tersus/style.css");
+/*	Fonts ----- */
+	@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+	// Choose your own fonts to embed: http://www.google.com/fonts
 
 /*	Core Styles ----- */
 	@import "sass/core";
-
-
-#searchform{
-	input[type=text] {
-		background: #DDD;
-		color: #333;
-		border: 1px solid transparent;
-		width: 95%;
-	}
-	input[type=submit] {
-		display: none;
-	}
-}
-
 
 /*	Header ----- */
 	@import "sass/header";
@@ -41,6 +34,9 @@
 
 /*	Content --- */
 	@import "sass/content";
+
+/*	Search ----- */
+	@import "sass/search";
 
 /*	Sidebars ----- */
 	@import "sass/sidebar";

@@ -1,4 +1,5 @@
 @import url("../tersus/style.css");
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 /*
 * Theme Name: Super Ginormous
 * Theme URI: https://github.com/cdharrison/Super-Ginormous
@@ -10,6 +11,8 @@
 * License URI: https://raw.github.com/splorp/tersus/master/license.txt
 * Tags: basic, clean, cruftless, naked, simple, simplicity, tersus
 */
+/*	Import Tersus Core Styles ----- */
+/*	Fonts ----- */
 /*	Core Styles ----- */
 *,
 *:before,
@@ -28,14 +31,8 @@ body {
   padding: 0;
   -webkit-text-size-adjust: 100%; }
 
-a, a:visited {
-  background: transparent;
-  color: #00aeef;
+a {
   text-decoration: none; }
-
-a:hover {
-  color: #333;
-  background: #DDD; }
 
 blockquote {
   background: #EEE;
@@ -83,28 +80,23 @@ input[type=url] {
   font-size: .8em;
   padding: .5em; }
 
-#searchform input[type=text] {
-  background: #DDD;
-  color: #333;
-  border: 1px solid transparent;
-  width: 95%; }
-#searchform input[type=submit] {
-  display: none; }
-
 /*	Header ----- */
 header {
-  background: #004a80;
+  background: #004a80 url(i/bg-honeycomb.png);
   line-height: 1;
   margin: 0;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px; }
-  header > h1 {
-    font-size: 420%;
-    font-weight: bold;
-    letter-spacing: -5px;
+  header a {
+    color: #fff; }
+  header h1 {
+    font: normal 420%/1 "Alfa Slab One", serif;
     margin: 0;
-    padding: 1.5% 1.5% 0; }
-  header > p {
+    padding: 1.5% 1.5% 0;
+    text-transform: uppercase; }
+    header h1 a {
+      color: #fff; }
+  header p {
     color: #fff;
     font-size: 120%;
     font-weight: 100;
@@ -160,8 +152,10 @@ nav[role="navigation"] {
   margin: 0;
   padding: 1.25%;
   width: 60%; }
+  #content a {
+    color: #004a80; }
   #content > h1 {
-    color: #960;
+    color: #004a80;
     font-weight: normal;
     font-size: 2em;
     line-height: 1;
@@ -173,6 +167,7 @@ nav[role="navigation"] {
       margin: 0 0 2%; }
   #content > h1,
   #content h2 {
+    font-family: "Alfa Slab One", serif;
     background: transparent;
     font-size: 300%;
     letter-spacing: -1px;
@@ -310,6 +305,15 @@ nav[role="navigation"] {
         margin: 1em 0 0;
         text-align: right;
         text-transform: uppercase; }
+
+/*	Search ----- */
+#searchform input[type=text] {
+  background: #DDD;
+  color: #333;
+  border: 1px solid transparent;
+  width: 95%; }
+#searchform input[type=submit] {
+  display: none; }
 
 /*	Sidebars ----- */
 aside {

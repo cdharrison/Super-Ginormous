@@ -1,0 +1,11 @@
+#searchform{
+	input[type=text] {
+		background: #DDD;
+		color: #333;
+		border: 1px solid transparent;
+		width: 95%;
+	}
+	input[type=submit] {
+		display: none;
+	}
+}

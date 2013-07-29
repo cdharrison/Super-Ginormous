@@ -1,17 +1,22 @@
 header {
-	background: $sgBlue;
+	background: $sgBlue url(i/bg-honeycomb.png);
 	line-height: 1;
 	margin: 0;
 	padding: 0;
 	text-shadow: rgba(0,0,0,.3) 1px 1px 1px;
-	& > h1 {
-		font-size: 420%;
-		font-weight: bold;
-		letter-spacing: -5px;
+	a{
+		color: #fff;
+	}
+	h1 {
+		font: normal 420%/1 $fontHeadings;
 		margin: 0;
 		padding: 1.5% 1.5% 0;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+		}
 	}
-	& > p {
+	p {
 		color: #fff;
 		font-size: 120%;
 		font-weight: 100;
