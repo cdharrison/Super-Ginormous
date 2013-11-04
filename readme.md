@@ -39,7 +39,7 @@ See the main [Tersus](https://github.com/splorp/tersus/) project for a current l
 
 ## Licensing
 
-This child theme is absolutely free and conveniently licensed under GPL. You may use it for personal or commercial projects, as you see fit. Refer to the [license.txt](https://github.com/splorp/splorp/blob/master/license.txt) file included with the source for more information.
+This child theme is absolutely free and conveniently licensed under GPL. You may use it for personal or commercial projects, as you see fit. Refer to the [license.txt](https://github.com/cdharrison/super-ginormous/blob/master/license.txt) file included with the source for more information.
 
 See the main [Tersus](https://github.com/splorp/tersus/) project for related third party [licensing information](https://github.com/splorp/tersus/#licensing).
 
