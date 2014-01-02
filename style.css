@@ -1,19 +1,25 @@
-@import url("../tersus/style.css");
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 /*
-* Theme Name: Super Ginormous
+* Theme Name: Super Ginormous for Tersus
 * Theme URI: https://github.com/cdharrison/Super-Ginormous
-* Description: An achingly simple child theme built for Tersus
-* Author: Chris Harrison, Grant Hutchinson, Dan Rubin, Andy van der Raadt
-* Version: 0.2.0 (Development)
+* Description: A child theme for Tersus
+* Author: Chris Harrison
+* Version: 0.0.1
 * License: GNU General Public License
 * Template: tersus
 * License URI: https://raw.github.com/splorp/tersus/master/license.txt
 * Tags: blue, white, light, three-columns, right-sidebar, fluid-layout, responsive-layout, post-formats, theme-options, microformats
 */
+
 /*	Import Tersus Core Styles ----- */
+
+@import url("../tersus/style.css");
+
 /*	Fonts ----- */
+
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
 /*	Core Styles ----- */
+
 *,
 *:before,
 *:after {
